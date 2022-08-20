@@ -26,4 +26,3 @@ while not bidding_finished:
         find_highest_bidders(bids)
     elif should_continue == "yes":
         os.system("clear")
-
