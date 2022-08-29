@@ -36,7 +36,7 @@ def is_resource_enough(order_ingredients):
     is_enough = True
     for item in order_ingredients:
         if order_ingredients[item] >= resources[item]:
-            print(f"Sorry there is not enough {item}")
+            print(f"Sorry there is not enough {item}.")
             is_enough = False
     return is_enough
 
@@ -53,7 +53,7 @@ def transaction_successful(money_received, drink_cost):
     """Return True when the payment is accepted, or False if money is insufficient."""
     if money_received >= drink_cost:
         change = round(money_received - drink_cost, 2)
-        print(f"Here is your change: ${change}")
+        print(f"Here is your change: ${change}.")
         global profit
         profit += drink_cost
         return True
@@ -78,9 +78,9 @@ while is_on:
         is_on = False
     # Using the report secret word to display the resources available
     elif choice == ("report").lower():
-       print(f"Water: {resources['water']}ml") 
-       print(f" Milk: {resources['milk']}ml") 
-       print(f" Coffee: {resources['coffee']}g ")
+       print(f"Water: {resources['water']}ml.") 
+       print(f" Milk: {resources['milk']}ml.") 
+       print(f" Coffee: {resources['coffee']}g. ")
        print(f"Money: ${profit} ") 
     else:
         # compare resources with the drink
