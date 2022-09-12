@@ -40,3 +40,11 @@
 #     print (enemies_global_scope)
 
 # increment_enemy()
+
+3+4
+3
+"Python is the best"
+name = "Waleghwa Mbogho"
+name
+"Hi there, " + name
+print("Hi there")
