@@ -1,6 +1,6 @@
 from turtle import Turtle, Screen
 
-# Declaring an object that has been imported from the a class
+# Declaring an object that has been imported from a class
 timmy = Turtle()
 print(timmy)
 
